@@ -1,0 +1,237 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  margin: 0;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid;
+}
+
+.btnDelete, .btnUpdata {
+  outline: none;
+  margin: 0;
+  height: 2.3rem;
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnDelete {
+  background-color: rgb(224, 38, 38);
+}
+
+.btnUpdata {
+  background-color: rgb(44, 172, 12);
+}
+
+.tow-box {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.add-user, .add-product, .add-categories, .add-orders {
+  margin: 2rem;
+}
+.add-user input, .add-user button, .add-product input, .add-product button, .add-categories input, .add-categories button, .add-orders input, .add-orders button {
+  padding: 0.2rem;
+  margin: 0.1rem;
+}
+.add-user button, .add-product button, .add-categories button, .add-orders button {
+  margin-top: 0.5rem;
+  width: 8rem;
+}
+
+.add-orders input {
+  width: 8.2rem;
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  background-color: rgb(252, 185, 0);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar h2 {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.navbar #titleM {
+  color: rgb(35, 35, 35);
+}
+
+#admin {
+  display: none;
+}
+
+#customer {
+  display: none;
+}
+
+#product {
+  display: none;
+}
+
+#categorie {
+  display: none;
+}
+
+#orders {
+  display: none;
+}
+
+#pendingOrders {
+  display: none;
+}
+
+#customers, #containerUsers {
+  display: grid;
+}
+#customers li, #containerUsers li {
+  margin: auto;
+}
+#customers li input:first-child, #containerUsers li input:first-child {
+  width: 4rem;
+}
+#customers li input, #containerUsers li input {
+  width: 10rem;
+  text-align: center;
+}
+#customers li #btnUpdata, #containerUsers li #btnUpdata {
+  width: 6rem;
+}
+#customers li #btnDelete, #containerUsers li #btnDelete {
+  width: 4rem;
+}
+#customers li #uppass, #containerUsers li #uppass {
+  width: 6rem;
+}
+#customers li #upphoneNum, #containerUsers li #upphoneNum {
+  width: 6rem;
+}
+#customers li #upnationalcode, #containerUsers li #upnationalcode {
+  width: 6rem;
+}
+
+#containerProducts input:first-child, #containerCategories input:first-child, #containerAdmin input:first-child {
+  width: 4rem;
+}
+#containerProducts #upcategoryId, #containerCategories #upcategoryId, #containerAdmin #upcategoryId {
+  width: 6rem;
+}
+#containerProducts input, #containerCategories input, #containerAdmin input {
+  text-align: center;
+}
+#containerProducts #btnUpdataP, #containerProducts #btnUpdataC, #containerCategories #btnUpdataP, #containerCategories #btnUpdataC, #containerAdmin #btnUpdataP, #containerAdmin #btnUpdataC {
+  width: 6rem;
+}
+#containerProducts #btnDeleteP, #containerCategories #btnDeleteP, #containerAdmin #btnDeleteP {
+  width: 4rem;
+}
+#containerProducts #btnDeleteC, #containerCategories #btnDeleteC, #containerAdmin #btnDeleteC {
+  width: 6rem;
+}
+#containerProducts #upimg, #containerCategories #upimg, #containerAdmin #upimg {
+  width: 13.3rem;
+}
+#containerProducts #upDescription, #containerCategories #upDescription, #containerAdmin #upDescription {
+  width: 13.3rem;
+}
+
+#containerAdmin #idadmin {
+  width: 5rem;
+}
+#containerAdmin #upusername {
+  width: 10rem;
+}
+#containerAdmin #btnDeleteAD {
+  width: 4rem;
+}
+#containerAdmin #btnUpdataAD {
+  width: 6rem;
+}
+
+#containerOrders input {
+  text-align: center;
+  width: 6rem;
+}
+#containerOrders #upOrderData {
+  width: 9rem;
+}
+#containerOrders input:first-child {
+  width: 4.5rem;
+}
+#containerOrders #btnUpdataO {
+  width: 6rem;
+}
+#containerOrders #btnDeleteO {
+  width: 5rem;
+}
+#containerOrders button {
+  padding: 0.5rem;
+}
+#containerOrders #upCOrders {
+  width: 6.5rem;
+}
+
+#titleorder input {
+  text-align: center;
+}
+
+#titlePendingOrders {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+#titlePendingOrders input {
+  text-align: center;
+}
+
+#containerPendingOrders #btnSent {
+  width: 6rem;
+}
+#containerPendingOrders #btnNotSent {
+  background-color: rgb(215, 84, 106);
+}
+#containerPendingOrders input {
+  text-align: center;
+  width: 6rem;
+}
+#containerPendingOrders #upOrderData {
+  width: 9rem;
+}
+#containerPendingOrders input:first-child {
+  width: 4.5rem;
+}
+#containerPendingOrders #btnUpdataO {
+  width: 6rem;
+}
+#containerPendingOrders #btnDeleteO {
+  width: 5rem;
+}
+#containerPendingOrders button {
+  padding: 0.5rem;
+}
+#containerPendingOrders #upCOrders {
+  width: 6.5rem;
+}/*# sourceMappingURL=managerPage.css.map */

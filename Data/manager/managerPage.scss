@@ -1,0 +1,252 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+input{
+    margin: 0;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid;
+}
+
+.btnDelete,.btnUpdata{
+    outline: none;
+    margin: 0;
+    height: 2.3rem;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnDelete{
+    background-color: rgb(224, 38, 38);
+}
+
+.btnUpdata{
+    background-color: rgb(44, 172, 12);
+}
+
+.tow-box{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.add-user , .add-product , .add-categories , .add-orders{
+    margin: 2rem;
+    input,button{
+        padding: 0.2rem;
+        margin: 0.1rem;
+    }
+    button{
+        margin-top: 0.5rem;
+        width: 8rem;
+    }
+}
+
+.add-orders{
+    input{
+        width: 8.2rem;
+        text-align: center;
+    }
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 4rem;
+    background-color: rgb(252, 185, 0);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h2{
+        cursor: pointer;
+        user-select: none;
+    }
+    #titleM{
+        color: rgb(35, 35, 35);
+    }
+}
+
+#admin{
+    display: none;
+}
+
+#customer{
+    display: none;
+
+}
+
+#product{
+    display: none;
+}
+
+#categorie{
+    display: none;
+}
+
+#orders{
+    display: none;
+}
+
+#pendingOrders{
+    display: none;
+}
+
+#customers,#containerUsers{
+    display: grid;
+    li{
+        input:first-child{
+            width: 4rem;
+        }
+        input{
+            width: 10rem;
+            text-align: center;
+        }
+        #btnUpdata{
+            width: 6rem;
+        }
+        #btnDelete{
+            width: 4rem;
+        }
+        margin: auto;
+        #uppass{
+            width: 6rem;
+        }
+        #upphoneNum{
+            width: 6rem;
+        }
+        #upnationalcode{
+            width: 6rem;
+        }
+    }
+}
+
+#containerProducts , #containerCategories ,#containerAdmin{
+    input:first-child{
+        width: 4rem;
+    }
+    #upcategoryId{
+        width: 6rem;
+    }
+    input{
+        text-align: center;
+    }
+    #btnUpdataP,#btnUpdataC{
+        width: 6rem;
+    }
+    #btnDeleteP{
+        width: 4rem;
+    }
+    #btnDeleteC{
+        width: 6rem;
+    }
+    #upimg{
+        width:13.3rem;
+    }
+    #upDescription{
+        width:13.3rem;
+    }
+}
+
+#containerAdmin{
+    #idadmin{
+        width:5rem;
+    }
+    #upusername{
+        width:10rem ;
+    }
+    #btnDeleteAD{
+        width:4rem ;
+    }
+    #btnUpdataAD{
+        width:6rem ;
+    }
+}
+
+#containerOrders{
+    input{
+        text-align: center;
+        width: 6rem;
+    }
+
+    #upOrderData{
+        width: 9rem;
+    }
+
+    input:first-child{
+        width: 4.5rem;
+    }
+    #btnUpdataO{
+        width: 6rem;
+    }
+    #btnDeleteO{
+        width: 5rem;
+    }
+    button{
+        padding: 0.5rem;
+    }
+    #upCOrders{
+        width: 6.5rem;
+    }
+}
+
+#titleorder{
+    input{
+        text-align: center;
+    }
+}
+
+#titlePendingOrders{
+    input{
+        text-align: center;
+    }
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#containerPendingOrders{
+    #btnSent{
+        width: 6rem;
+    }
+    #btnNotSent{
+        background-color: rgb(215, 84, 106);
+    }
+    input{
+        text-align: center;
+        width: 6rem;
+    }
+
+    #upOrderData{
+        width: 9rem;
+    }
+
+    input:first-child{
+        width: 4.5rem;
+    }
+    #btnUpdataO{
+        width: 6rem;
+    }
+    #btnDeleteO{
+        width: 5rem;
+    }
+    button{
+        padding: 0.5rem;
+    }
+    #upCOrders{
+        width: 6.5rem;
+    }
+}

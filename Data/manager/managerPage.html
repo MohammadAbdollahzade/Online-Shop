@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Manager Page</title>
+    <link rel="icon" href="./iconManager.ico">
+    <link rel="stylesheet" href="./managerPage.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2 id="titleM">Menu</h2>
+        <h2 id="titleA">Admins</h2>
+        <h2 id="titleC">Customers</h2>
+        <h2 id="titleP">Products</h2>
+        <h2 id="titleCa">Categories</h2>
+        <h2 id="titleO">Orders</h2>
+        <h2 id="titlePO">Pending Orders</h2>
+    </div>
+    <div id="menu">
+        <center>
+        <h1>Menu</h1>
+        <ul id="customers" style="margin-top: 7rem;">
+            <li style="display: flex;">
+            <input style="width:11.3rem ;" value="Name" readonly="readonly" type="text">
+            <input style="width:11.3rem ;" value="Username" readonly="readonly" type="text">
+            <input style="width:11.3rem ;" value="Password" readonly="readonly" type="text">
+        </li>
+    </ul>
+    <ul id="containerManager">
+    </ul>
+    <button id="btnUpdataM" style="padding: 0.2rem; margin-top: 0.5rem; cursor: pointer;">Updata</button>
+</center>
+    </div>
+    <div id="admin">
+        <center>
+        <h1>Admins</h1>
+        <ul class="add-product">
+            <li>
+            <input value="Name" readonly="readonly" type="text">
+            <input value="Username" readonly="readonly" type="text">
+            <input value="Password" readonly="readonly" type="text">
+            <li>
+                <input id="nameAdmin" type="text"
+                required>
+                <input id="usernameAdmin" type="text" required onkeypress="return /[a-z_]/.test(String.fromCharCode(event.keyCode))">
+                <input id="passwordAdmin" type="text" required>
+            </li>
+            <button id="addAdmin">Add Admin</button>
+        </ul>
+        <ul id="customers" style="margin-top: 7rem;">
+            <li style="display: flex;">
+            <input readonly="readonly" value="ID Admin" style="width:5rem ;">
+            <input style="width:11.3rem ;" value="Name" readonly="readonly" type="text">
+            <input style="width:10rem ;" value="Username" readonly="readonly" type="text">
+            <input style="width:11.3rem ;" value="Password" readonly="readonly" type="text">
+            <input value="" placeholder="Search Admin" type="text" id="searchAdmin">
+        </li>
+    </ul>
+    <ul id="containerAdmin">
+    </ul>
+</center>
+    </div>
+    <div id="customer">
+        <center>
+            <h1>Customers</h1>
+        <ul class="add-user">
+            <li>
+                <input value="Name & Lastname" readonly="readonly" type="text">
+                <input value="User Name" readonly="readonly" type="text">
+            <input value="Password" readonly="readonly" type="text">
+            <input value="Email" readonly="readonly" type="text">
+            <input value="Phone Number" readonly="readonly" type="text">
+            <input value="City" readonly="readonly" type="text">
+            <input value="Address" readonly="readonly" type="text">
+            <input value="National Code" readonly="readonly" type="text">
+            </li>
+            <li>
+                <input id="nameLast" type="text" maxlength="35" required>
+                <input id="username" type="text" maxlength="22" required onkeypress="return /[a-zA-Z_]/.test(String.fromCharCode(event.keyCode))">
+                <input id="pass" class="password" type="password"
+                maxlength="8" required>
+                <input id="email" type="email" maxlength="35" required>
+                  <input id="phoneNum" type="text" minlength="10"
+                  maxlength="10" placeholder="+98" value="" required>
+                <input id="city" type="text" minlength="2"
+                maxlength="15" required>
+                <input id="address" maxlength="120" type="text">
+                </input>
+                <input id="nationalCode" type="text" minlength="7"
+                maxlength="10" required>
+            </li>
+            <button id="addCustomer">Add Customer</button>
+        </ul>
+    </center>
+    <ul id="customers">
+            <li style="display: flex;">
+            <input readonly="readonly" value="ID" type="text">
+            <input value="Username" readonly="readonly" type="text">
+            <input value="Name & Lastname" readonly="readonly" type="text">
+            <input value="Password" style="width: 6rem;" readonly="readonly" type="text">
+            <input value="Email" readonly="readonly" type="text">
+            <input value="Phone Number" readonly="readonly" style="width: 6rem;" type="text">
+            <input value="City" readonly="readonly" type="text">
+            <input value="Address" readonly="readonly" type="text">
+            <input value="National Code" readonly="readonly" style="width: 6rem;" type="text" >
+            <input value="Registration Time" readonly="readonly" type="text">
+            <input value="" placeholder="Search User" type="text" id="search">
+        </li>
+    </ul>
+    <ul id="containerUsers">
+    </ul>
+</div>
+<div id="product">
+    <center>
+    <h1>Products</h1>
+    <ul class="add-product">
+        <li>
+        <input value="Product Name" readonly="readonly" type="text">
+        <input value="Description" readonly="readonly" type="text">
+        <input value="Price" readonly="readonly" type="text">
+        <input value="Link Image" readonly="readonly" type="text">
+        <input value="Category" readonly="readonly" type="text">
+        <li>
+            <input id="productName" type="text" required>
+            <input id="description" class="description" type="text"
+            required>
+            <input id="pricee" type="text" required>
+            <input id="linkImage" type="text" required>
+            <select id="category">
+            </select>
+        </li>
+        <button id="addProduct">Add Product</button>
+    </ul>
+    <ul id="customers">
+        <li style="display: flex;">
+        <input readonly="readonly" value="ID" type="text">
+        <input style="width: 11.3rem ;" value="Product Name" readonly="readonly" type="text">
+        <input style="width: 11.3rem ;" value="Description" readonly="readonly" type="text">
+        <input style="width: 11.3rem ;" value="Price" readonly="readonly" type="text">
+        <input style="width: 11.3rem ;" value="Link Image" readonly="readonly" type="text">
+        <input style="width: 6rem ;" value="Category Id" readonly="readonly" type="text">
+        <input style="width: 10rem;" value="" placeholder="Search Product" type="text" id="search">
+    </li>
+</ul>
+<ul id="containerProducts">
+</ul>
+</center>
+</div>
+<div id="categorie">
+    <center>
+    <h1>Categories</h1>
+    <ul class="add-categories">
+    <li>
+        <input value="Categories Name" readonly="readonly" type="text">
+        <input value="Link Image" readonly="readonly" type="text">
+        <input value="Description" readonly="readonly" type="text">
+    </li>
+    <li style="display:flex ; justify-content: center;">
+    <input id="categories" type="text" required>
+    <input id="imgCategories" style="margin-left: 0.4rem;" type="text" required>
+    <input id="CDescription" type="text" required>
+        </li>
+        <button id="addCategories">Add Categories</button>
+    </ul>
+    <ul id="customers">
+        <li style="display: flex;">
+        <input readonly="readonly" value="ID" type="text">
+        <input style="width:11.3rem ;" value="Categories Name" readonly="readonly" type="text">
+        <input value="Link Image" style="width:13.3rem ;" readonly="readonly" type="text">
+        <input value="Description" style="width:13.3rem ;" readonly="readonly" type="text">
+        <input style="width:12rem ;" value="" placeholder="Search Categories" type="text" id="search">
+    </li>
+</ul>
+<ul id="containerCategories">
+</ul>
+</center>
+</div>
+
+<div id="orders">
+    <center>
+    <h1>Orders</h1>
+    <ul class="add-orders">
+        <li style="display: flex; justify-content: center;">
+        <input value="Customer Id" readonly="readonly" type="text">
+        <input value="Product Id" readonly="readonly" type="text">  
+        <input value="Quantity" readonly="readonly" type="text">  
+        <input value="Item Notes" readonly="readonly" type="text">  
+        <input value="Item Price" readonly="readonly" type="text">        
+        <input value="Item Discount" type="text" required>
+        <input value="Total Amount" readonly="readonly" type="text">  
+        <input value="Item Total" readonly="readonly" type="text">        
+        <input readonly="readonly"  value="Item Status" type="text" required>
+        <input readonly="readonly"  value="Payment Type" type="text" required>
+        <input readonly="readonly"  value="Status" type="text" required>
+        </li>
+        <li style="display: flex; justify-content: center;">
+        <input id="customerId" type="text" required>
+        <input id="productId" type="text" required>
+        <input id="quantity" type="text" required>
+        <input id="itemNotes" type="text" required>
+        <input id="itemPrice" type="text" required>
+        <input id="itemDiscount" type="text" required>
+        <input id="totalAmount" type="text" required>
+        <input id="itemTotal" type="text" required>
+        <input id="itemStatus" type="text" required>
+        <input id="paymentType" readonly="readonly" value="in person" type="text" required>
+        <input id="statuss" type="text" value="waiting" readonly="readonly" required>
+        </li>
+        <button id="addOrders">Add Orders</button>
+    </ul>
+</center>
+    <ul id="titleorder">
+        <li style="display: flex; justify-content: center;">
+            <input value="Order Id" readonly="readonly" style="width: 4.5rem;"type="text">
+            <input value="Customer Id" readonly="readonly" style="width: 6.5rem;"type="text">
+            <input value="Order Data" readonly="readonly" style="width: 9rem;"type="text">
+            <input style="width: 6rem;" value="Product Id" readonly="readonly" type="text">  
+            <input style="width: 6rem;" value="Quantity" readonly="readonly" type="text">  
+            <input style="width: 6rem;" value="Item Notes" readonly="readonly" type="text">  
+            <input value="Item Price" style="width: 6rem;" readonly="readonly" type="text">        
+            <input style="width: 6rem;" value="Item Discount" type="text" required>
+            <input style="width: 6rem;" value="Total Amount" readonly="readonly" type="text">  
+            <input style="width: 6rem;" value="Item Total" readonly="readonly" type="text">        
+            <input style="width: 6rem;" value="Item Status" type="text" required>
+            <input style="width: 6rem;" value="Payment Type" type="text" required>
+            <input style="width: 6rem;"  value="Status" type="text" required>
+            <input style="width:11rem ;" value="" placeholder="Search Order" type="text" id="search">
+    </li>
+</ul>
+<center>
+<ul id="containerOrders">
+</ul>
+</center>
+</div>
+
+<div id="pendingOrders">
+    <h1>Pending Orders</h1>
+    <ul id="titlePendingOrders">
+        <li style="display: flex; ">
+            <input value="Order Id" readonly="readonly" style="width: 4.5rem;"type="text">
+            <input value="Customer Id" readonly="readonly" style="width: 6.5rem;"type="text">
+            <input value="Order Data" readonly="readonly" style="width: 9rem;"type="text">
+            <input style="width: 6rem;" value="Product Id" readonly="readonly" type="text">  
+            <input style="width: 6rem;" value="Quantity" readonly="readonly" type="text">  
+            <input style="width: 6rem;" value="Item Notes" readonly="readonly" type="text">  
+            <input value="Item Price" style="width: 6rem;" readonly="readonly" type="text">        
+            <input style="width: 6rem;" value="Item Discount" type="text" required>
+            <input style="width: 6rem;" value="Total Amount" readonly="readonly" type="text">  
+            <input style="width: 6rem;" value="Item Total" readonly="readonly" type="text">        
+            <input readonly="readonly" style="width: 6rem;" value="Item Status" type="text" required>
+            <input readonly="readonly" style="width: 6rem;" value="Payment Type" type="text" required>
+            <input readonly="readonly" style="width: 6rem;"  value="Status" type="text" required>
+            <input style="width:10.5rem ;" value="" placeholder="Search Order" type="text" id="search">
+    </li>
+</ul>
+<center>
+<ul id="containerPendingOrders">
+</ul>
+</center>
+</div>
+
+<script src="./managerPage.js"></script> 
+</body>
+</html>
