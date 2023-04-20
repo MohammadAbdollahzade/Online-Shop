@@ -1,0 +1,14 @@
+Things that have been used:
+Backend : Python flask
+front : JS
+
+
+
+Remove the background from the photo
+https://photoscissors.com/
+
+Creating a photo upload link
+https://freeimage.host/
+
+Figam
+https://www.figma.com/file/0IMdfEd8rTJcudhW4BdSHG/Online-Shop?node-id=0%3A1&t=Spe9n7ueuQ65Yjj1-1
